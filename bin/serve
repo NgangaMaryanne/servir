@@ -55,6 +55,7 @@ class Serve {
   }
 
   start() {
+    console.log(this.args)
     const server = this.http.createServer(this.app);
     return server.listen(this.port, error => {
       if (error) throw error;
